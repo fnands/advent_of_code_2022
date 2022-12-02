@@ -9,8 +9,8 @@ end
 
 # Define dict that maps set of hands to points won
 point_dict_1 = Dict([("A X", 4), ("B X", 1), ("C X", 7),
-                   ("A Y", 8), ("B Y", 5), ("C Y", 2),
-                   ("A Z", 3), ("B Z", 9), ("C Z", 6)])
+                     ("A Y", 8), ("B Y", 5), ("C Y", 2),
+                     ("A Z", 3), ("B Z", 9), ("C Z", 6)])
 
 function one_round_1(hands::String)
     point_dict_1[hands]
