@@ -6,22 +6,15 @@ in_file = "day_6/input_6.txt"
 end
 
 
-for i in 1:length(📉)-3
-    
-    if length(unique(📉[i:i+3])) == 4
-        println(i+3)
-        break
+function get_first_repeating_n(signal::String, n::Int)
+    terminator = n - 1
+    for i in 1:length(📉)-terminator
+        if length(unique(📉[i:i+terminator])) == n
+            return i+terminator
+            
+        end
     end
 end
 
-
-for i in 1:length(📉)-13
-    
-    if length(unique(📉[i:i+13])) == 14
-        println(📉[i:i+13])
-        println(i)
-        println(📉[i+13])
-        println(i+13)
-        break
-    end
-end
+println("The solution to part one is: ", get_first_repeating_n(📉, 4))
+println("The solution to part two is: ", get_first_repeating_n(📉, 14))
