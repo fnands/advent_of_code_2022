@@ -58,5 +58,5 @@ commands = parse_commands.(🟩🟥🟨[11:end])
 
 
 
-shuffle_stacks(starting_stack, commands, 9000)
-shuffle_stacks(starting_stack, commands, 9001)
+println("The solution to part one is: ", shuffle_stacks(starting_stack, commands, 9000) .|> x -> getindex(x, 1))
+println("The solution to part two is: ", shuffle_stacks(starting_stack, commands, 9001) .|> x -> getindex(x, 1))
