@@ -1,5 +1,5 @@
 
-in_file = "day_3/input_3.txt"
+in_file = "input/input_3.txt"
 
 # Read in input file as an array of strings
 all_contents = open(in_file) do file

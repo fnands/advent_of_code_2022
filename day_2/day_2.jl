@@ -1,6 +1,6 @@
 
 
-in_file = "day_2/input_2.txt"
+in_file = "input/input_2.txt"
 
 # Read in input file as an array of strings
 hand_shape = open(in_file) do file

@@ -1,4 +1,4 @@
-in_file = "day_6/input_6.txt"
+in_file = "input/input_6.txt"
 
 # Read in input file as an array of strings
 📉 = open(in_file) do file

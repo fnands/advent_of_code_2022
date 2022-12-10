@@ -1,7 +1,7 @@
 using TimerOutputs
 const to = TimerOutput()
 
-in_file = "day_1/input_1.txt"
+in_file = "input/input_1.txt"
 
 
 
