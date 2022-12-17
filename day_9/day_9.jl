@@ -22,8 +22,6 @@ function distance(head_pos, tail_pos)
 end
 
 function follow_instructions(head_moves, translate_directions, body_len = 10)
-    head_pos = [0, 0]
-    tail_pos = [0, 0]
     visited = Set([[0, 0]])
 
 
@@ -34,7 +32,7 @@ function follow_instructions(head_moves, translate_directions, body_len = 10)
         amount = split(move) |> x -> getindex(x, 2) |> x -> parse(Int, x)
 
         step = translate_directions[direction]*[1, 0]
-        for i in 1:amount
+        for _ in 1:amount
             ropes[1] += step
             for knot in 2:body_len
                 tail_move = distance(ropes[knot - 1], ropes[knot])
